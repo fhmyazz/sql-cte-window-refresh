@@ -28,7 +28,7 @@ select *,
 	row_number() over(partition by category order by finish_time) finish_by_category
 from runners2
 
--- contoh lag
+--contoh lag + row_number
 with monthly_sales as (
 	select 
 		date_trunc('month', sale_date) as month,
@@ -46,5 +46,7 @@ select *,
 	case 
 		when prev_month = 0 or prev_month is null then null
 		else round((total - prev_month) * 100.0 / prev_month, 2)
-	end as pct_growth
+	end as pct_growth,
+	sum(total) over(order by month) as running_total,
+	row_number() over(order by month) as row_num
 from with_lag;
