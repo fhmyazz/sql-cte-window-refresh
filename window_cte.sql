@@ -45,6 +45,6 @@ select *,
 	total - prev_month as growth,
 	case 
 		when prev_month = 0 or prev_month is null then null
-		else ((total - prev_month) * 100.0 / prev_month, 2)
+		else round((total - prev_month) * 100.0 / prev_month, 2)
 	end as pct_growth
 from with_lag;
