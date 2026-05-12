@@ -67,3 +67,19 @@ INSERT INTO products VALUES
 (3, 'Samsung Galaxy', 'Electronics',  600000),
 (4, 'Celana Jeans',   'Fashion',      120000),
 (5, 'Nasi Goreng Box','Food',          30000);
+
+CREATE TABLE users (
+  id INT,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  tier VARCHAR(20),
+  created_at DATE
+);
+
+INSERT INTO users VALUES
+(101, 'Budi Santoso',  'budi@email.com',  'gold',   '2023-01-15'),
+(102, 'Ani Wijaya',    'ani@email.com',   'silver', '2023-03-20'),
+(103, 'Citra Dewi',    'citra@email.com', 'gold',   '2023-02-10'),
+(104, 'Deni Kusuma',   'deni@email.com',  'bronze', '2023-06-05'),
+(105, 'Eko Prasetyo',  'eko@email.com',   'silver', '2023-08-12'),
+(106, 'Fani Larasati', 'fani@email.com',  'gold',   '2023-04-30');

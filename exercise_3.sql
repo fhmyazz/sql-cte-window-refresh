@@ -1,10 +1,14 @@
+-- GP-1 — Tampilkan semua transaksi completed beserta cost_price produknya dan profit per transaksi. Gunakan data yang sudah dideduplikasi.
+-- GP-2 — Dari hasil GP-1, tampilkan hanya transaksi yang profitnya di atas rata-rata profit keseluruhan.
+-- id | user_id | category | amount | cost_price | profit
+
 with completed_trx as(
 	select
 		   rt.id trx_id,
 		   rt.user_id, p.category, rt.amount, p.cost_price,
 		   rt.amount - p.cost_price profit,
 		   row_number() over(
-		   		partition by rt.user_id, p.category, rt.amount
+		   		partition by rt.user_id, p.category, rt.amount, rt.created_at
 		   ) as rownum_unique
 	from raw_transactions rt,
 		 products p
