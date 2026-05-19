@@ -1,20 +1,29 @@
-# SQL CTE & Window Function Refresher
+# 🚀 Data Engineering Learning Journey (Central Hub)
 
-This repository contains my personal notes and practice queries for revisiting SQL concepts, especially:
+Welcome to the master repository documenting my transition into Data Engineering. 
+Leveraging my background in Software Quality Assurance and previous data-focused roles.
 
-* Common Table Expressions (CTE)
-* Window Functions
+**Note:** This repository serves as my central roadmap and daily learning log (SQL, Python scripts). For my production-grade orchestration and pipeline projects, please see the **Repository Index** below.
 
-## 📌 Purpose
+## 📂 Repository Index
+To keep environments clean and mirror production standards, my end-to-end projects are hosted in separate repositories:
 
-To refresh and strengthen my understanding of advanced SQL concepts and make it easy to access across different devices.
+* 📍 **[This Repo] de-learning-journey:** Daily code snippets, SQL advanced queries, and pandas exploration.
+* 🚧 **[Upcoming]
 
-## 🛠️ Tools
+## 📖 Background
+I am currently a Software QA Engineer at Mandiri Utama Finance with over 4 years of experience in manual and automated testing. My recent focus has been on building an SDET portfolio involving UI/API automation (Playwright) and CI/CD pipelines using GitHub Actions. 
 
-* PostgreSQL
+However, my technical roots lie in data. I previously worked as a Junior Data Scientist intern at Telkom Indonesia, developing Python scripts for data extraction and MySQL integration. Now, I am bridging my QA with modern Data Engineering.
 
-## ✍️ Notes
+## 🛠️ Tech Stack & Proficiencies
+* **Languages:** Python, SQL, JavaScript
+* **Data & Analytics:** PostgreSQL, BigQuery, dbt (Learning)
+* **Testing & CI/CD:** Playwright, Jest, GitHub Actions
 
-This is a learning repository, so queries may evolve over time as I improve my understanding.
-
----
+## 🚀 Roadmap & Progress
+- [x] **Phase 1: Advanced SQL** (Window Functions, CTEs, JOINs, Query Optimization)
+- [ ] **Phase 2: Python for Data** (pandas, SQLAlchemy)
+- [ ] **Phase 3-4: Production-Ready Python**
+- [ ] **Phase 5: Modern Data Warehouse** (BigQuery + dbt)
+- [ ] **Phase 6: Orchestration & Portfolio Project** (Airflow + End-to-End Pipeline)
