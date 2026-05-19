@@ -1,4 +1,5 @@
--- GP-1 — Tampilkan semua transaksi completed beserta cost_price produknya dan profit per transaksi. Gunakan data yang sudah dideduplikasi.
+-- GP-1 — Tampilkan semua transaksi completed beserta cost_price produknya dan profit per transaksi. 
+-- Gunakan data yang sudah dideduplikasi.
 -- GP-2 — Dari hasil GP-1, tampilkan hanya transaksi yang profitnya di atas rata-rata profit keseluruhan.
 -- id | user_id | category | amount | cost_price | profit
 

@@ -1,4 +1,5 @@
---GP-1 — Tampilkan semua user beserta total transaksi completed mereka. User yang belum pernah transaksi tetap tampil dengan total_revenue = 0 (bukan NULL).
+--GP-1 — Tampilkan semua user beserta total transaksi completed mereka. 
+--User yang belum pernah transaksi tetap tampil dengan total_revenue = 0 (bukan NULL).
 select u.name, u.tier, count(rt.id) total_trx, coalesce(sum(rt.amount), 0) as total_revenue
 from users u
 left join raw_transactions rt on u.id = rt.user_id and rt.status = 'completed'

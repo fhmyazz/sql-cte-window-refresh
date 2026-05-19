@@ -5,7 +5,6 @@
 -- mom_growth_pct — growth persen bulatkan 1 desimal, NULL kalau tidak ada bulan sebelumnya
 -- rank_in_region — ranking salesperson di regionnya berdasarkan monthly_total, bulan tersebut
 
-
 with monthly_sales as(
 	select region, salesperson,
 		date_trunc('month', sale_date) as "month",

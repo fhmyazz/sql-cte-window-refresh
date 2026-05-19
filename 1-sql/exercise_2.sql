@@ -1,5 +1,6 @@
 --GP-2 — Dari data yang sudah dideduplikasi, buat summary per kategori khusus transaksi completed:
 --category | total_revenue | total_trx | avg_trx | pct_of_total_revenue
+
 --pct_of_total_revenue — kontribusi revenue kategori terhadap total keseluruhan, bulatkan 1 desimal
 --Urutkan dari revenue tertinggi
 
